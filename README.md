@@ -12,6 +12,7 @@ This is a production-ready dbt project template using Cookiecutter.
 ```sh
 dbt run --target prod
 dbt test --target prod
+```
 
 ## Create standard dbt project using cookiecutter
 
