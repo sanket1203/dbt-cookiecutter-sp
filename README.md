@@ -32,4 +32,4 @@ You've downloaded C:\Users\SANKET\.cookiecutters\dbt-cookiecutter-sp before. Is 
   [9/10] warehouse (your_warehouse):
   [10/10] ci_cd_enabled (true):
 
-  ![alt text](image.png)
+ ![alt text](image.png)
