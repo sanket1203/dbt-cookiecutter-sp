@@ -1,0 +1,11 @@
+{
+    "project_name": "My dbt Project",
+    "project_slug": "dbt_project",
+    "dbt_version": "1.6.0",
+    "profile_name": "dbt_project_profile",
+    "target_schema": "analytics",
+    "database": "your_database",
+    "threads": 4,
+    "warehouse": "your_warehouse"
+  }
+  
