@@ -1,4 +1,4 @@
-# {{ cookiecutter.project_slug }}
+# {{ dbt-cookiecutter-sp}}
 
 ## Project Overview
 This is a production-ready dbt project template using Cookiecutter.
