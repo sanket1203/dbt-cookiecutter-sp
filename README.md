@@ -15,7 +15,7 @@ dbt test --target prod
 ```
 
 ## Create standard dbt project using cookiecutter
-
+```sh
 dbt-cookiecutter-sp>cookiecutter https://github.com/sanket1203/dbt-cookiecutter-sp
 You've downloaded C:\Users\SANKET\.cookiecutters\dbt-cookiecutter-sp before. Is it okay to delete and re-download it? [y/n] (y): y
   [1/10] project_name (My Production dbt Project): dbt_project
@@ -32,5 +32,6 @@ You've downloaded C:\Users\SANKET\.cookiecutters\dbt-cookiecutter-sp before. Is 
   [8/10] threads (8):
   [9/10] warehouse (your_warehouse):
   [10/10] ci_cd_enabled (true):
+```
 
  ![alt text](image.png)
