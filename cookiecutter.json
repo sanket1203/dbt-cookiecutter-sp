@@ -1,11 +1,13 @@
 {
-    "project_name": "My dbt Project",
-    "project_slug": "dbt_project",
+    "project_name": "My Production dbt Project",
+    "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_') }}",
     "dbt_version": "1.6.0",
-    "profile_name": "dbt_project_profile",
+    "profile_name": "{{ cookiecutter.project_slug }}_profile",
+    "environment": ["dev", "staging", "prod"],
     "target_schema": "analytics",
     "database": "your_database",
-    "threads": 4,
-    "warehouse": "your_warehouse"
+    "threads": 8,
+    "warehouse": "your_warehouse",
+    "ci_cd_enabled": "true"
   }
   

@@ -1,0 +1,26 @@
+{{ cookiecutter.profile_name }}:
+  target: prod
+  outputs:
+    dev:
+      type: bigquery
+      method: service-account
+      project: "{{ cookiecutter.database }}"
+      dataset: "dev_{{ cookiecutter.target_schema }}"
+      threads: {{ cookiecutter.threads }}
+      keyfile: /path/to/service/account.json
+
+    staging:
+      type: bigquery
+      method: service-account
+      project: "{{ cookiecutter.database }}"
+      dataset: "staging_{{ cookiecutter.target_schema }}"
+      threads: {{ cookiecutter.threads }}
+      keyfile: /path/to/service/account.json
+
+    prod:
+      type: bigquery
+      method: service-account
+      project: "{{ cookiecutter.database }}"
+      dataset: "{{ cookiecutter.target_schema }}"
+      threads: {{ cookiecutter.threads }}
+      keyfile: /path/to/service/account.json

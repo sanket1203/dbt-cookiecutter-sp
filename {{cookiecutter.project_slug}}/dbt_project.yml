@@ -1,3 +1,14 @@
-name: "{{cookiecutter.project_slug}}" 
-version: "1.0.0" 
-config-version: 2 
+name: "{{ cookiecutter.project_slug }}"
+version: "1.0.0"
+config-version: 2
+profile: "{{ cookiecutter.profile_name }}"
+
+models:
+  {{ cookiecutter.project_slug }}:
+    staging:
+      +materialized: view
+      +schema: "staging"
+    marts:
+      +materialized: table
+      +schema: "marts"
+      +tags: ["production"]
